@@ -1,5 +1,10 @@
-shared.key = "mettez la clé " 
- 
-KeyLink = "https://pastebin.com/raw/b87nZ4r2"
- 
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/YoyoSoloExe/Script_T00ls/main/no%20open"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Get key", "Midnight")
+
+--Get Key
+local GetKey = Window:NewTab("Get key")
+local GetKeySection = GetKey:NewSection("Get key")
+
+GetKeySection:NewButton("Get key", "avoir la key", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/b87nZ4r2'))()
+end)
