@@ -1,0 +1,5 @@
+shared.key = "mettez la clé " 
+ 
+KeyLink = "https://pastebin.com/raw/b87nZ4r2"
+ 
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/YoyoSoloExe/Script_T00ls/main/no%20open"))()
